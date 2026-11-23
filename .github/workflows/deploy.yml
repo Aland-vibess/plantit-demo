@@ -20,6 +20,7 @@ jobs:
           channel: stable
       - run: flutter create . --platforms=web --project-name plantit
       - run: flutter pub get
+      - run: flutter test --reporter expanded 2>&1 | grep -v "^\s*$" | head -150 || true
       - run: flutter build web --release --base-href /plantit-demo/
       - uses: actions/upload-pages-artifact@v3
         with:
