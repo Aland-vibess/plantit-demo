@@ -180,8 +180,8 @@ const speciesDb = [
 ];
 
 class AppState extends ChangeNotifier {
-  String name = 'Dilan Ahmed';
-  String email = 'dilan.ahmed@example.com';
+  String name = 'Aland Shirzad';
+  String email = 'aland.shirzad@example.com';
   String role = 'Volunteer';
   bool reminders = true;
   final registrations = <String>{};
