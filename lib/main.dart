@@ -296,6 +296,7 @@ class _ShellState extends State<Shell> {
           child: SafeArea(
             top: false,
             child: Row(
+              mainAxisSize: MainAxisSize.min,
               children: List.generate(4, (i) {
                 final on = i == tab;
                 return Expanded(
@@ -305,7 +306,7 @@ class _ShellState extends State<Shell> {
                     child: Container(
                       padding: const EdgeInsets.symmetric(vertical: 6),
                       decoration: BoxDecoration(color: on ? C.tint : null, borderRadius: BorderRadius.circular(6)),
-                      child: Column(children: [
+                      child: Column(mainAxisSize: MainAxisSize.min, children: [
                         Icon(items[i].$1, size: 20, color: C.ink),
                         const SizedBox(height: 2),
                         Text(items[i].$2, style: const TextStyle(fontSize: 10)),
