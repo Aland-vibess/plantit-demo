@@ -291,6 +291,7 @@ class _ShellState extends State<Shell> {
           ]),
         ),
         bottomNavigationBar: Container(
+          height: 72,
           decoration: const BoxDecoration(color: Colors.white, border: Border(top: BorderSide(color: C.line))),
           padding: const EdgeInsets.fromLTRB(8, 6, 8, 10),
           child: SafeArea(
